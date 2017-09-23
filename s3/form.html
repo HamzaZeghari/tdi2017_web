@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>séance 3 html : les formulaires</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		label{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body bgcolor="pink">
+<form action="" method="post">
+	<table align="center">
+		<tr>
+			<th><label for="email">Email :</label></th>
+			<td>
+			<input type="email" name="email" id="email" required="required"  placeholder="veuillez entrer votre email " size="40"></td>
+		</tr>
+		<tr>
+			<th>Mot de passe :</th>
+			<td><input type="password" name="p" id="p" required="required" size="40" placeholder="mot de passe"></td>
+		</tr>		<tr>
+			<th></th>
+		<td><input type="submit"  id="ok" ></td>
+		</tr>
+<tr>
+	<td><label for="hh">Homme : </label> <input type="radio" name="hf" id="hh"> </td>
+	<td><label for="femme">Femme : </label> <input type="radio" name="hf" id="femme">
+
+	</td>
+</tr>
+
+<tr>
+	<th> adress :</th>
+	<td><textarea name="adresse" id="adresse" cols="30" rows="10"></textarea></td>
+</tr>
+<tr>
+	<th> ville</th>
+	<td> <select name="ville" id="ville">
+		<option value="casa">Casa</option>
+		<option value="rabat">Rabat</option>
+		<option value="tanger">Tanger</option>
+	</select></td>
+</tr>
+	</table>
+
+</form>
+</body>
+</html>
