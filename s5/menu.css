@@ -24,9 +24,8 @@ a{
 	transition: all 1s linear;/* Firefox 16+, Opera 12.50+ */
 }
 a:hover{
-	background: red;
+	background: red; 
 	border-radius: 0;
-
 }
 p{
 	clear: both;

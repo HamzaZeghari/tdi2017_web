@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#entete{
+	width: 800px;
+	height: 200px;
+	
+	margin:0px auto ;
+}
+
+#menu{
+	width: 800px;
+	height: 50px;
+	background: #CCC;
+	margin:0px auto ;
+}
+#contenu{
+	width: 800px;
+	min-height: 400px;
+	background: none;
+	margin:0px auto ;
+	opacity: 0.8;
+}
+#pied{
+	width: 800px;
+	height: 40px;
+	background: black;
+	margin:0px auto ;
+	clear: both;
+}
+#logo{
+	width: 300px;
+	height: 200px;
+
+	float: left;
+}
+#slogan{
+	width: 500px;
+	height: 200px;
+	background: none;
+	float: right;
+}
+
+.produit{
+	width: 33.3333%;
+	height: 320px;
+	background: none;
+	float: left;
+	border:1px solid #EEE;
+	box-sizing: border-box;/*pour garder la meme taille*/
+
+}
+marquee{
+	background: none;
+	height: 200px;
+	line-height: 200px;
+	font-size: 3em;
+}
+#logo img{
+	width: 100%;
+	height: 100%;
+}
+.photo{
+	width: 100%;
+	height: 200px;
+	border:1px solid white;
+	text-align: center;
+}
+.photo img{
+	height: 100%;
+
+	
+}
+.titre{
+	width: 100%;
+	height:30px; 
+	font-size: 1.1em;
+	text-align: center;
+	text-transform: capitalize;
+
+}
+.titre:first-letter{
+	color: white;
+	background: red;
+	font-size: 1.3em;
+}
+.prix{
+	width: 60px;
+	height: 60px;
+	background: white;
+	border-radius:30px;
+	text-align: center;
+	line-height: 60px;
+	margin: auto;
+	padding: 10px;
+	color: green;
+}
+.produit:hover{
+	background: black;
+	color: white;
+	border:4px solid grey;
+	padding: 20px;
+}
+
+
+
+
