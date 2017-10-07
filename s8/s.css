@@ -1,0 +1,17 @@
+.btn{
+	border:0px solid #EEE;
+	
+	display: inline-block;
+	padding: 5px;
+border-radius: 5px;
+text-decoration: none;
+}
+.rouge{
+background: red;
+color: white;
+}
+p{
+height: 100px;border:1px solid black;
+overflow: scroll;
+
+}
