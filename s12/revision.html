@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Révision</title>
+	<link rel="stylesheet" href="zoning.css">
+	<link rel="stylesheet" href="content.css">
+	<link rel="stylesheet" href="impression.css" media="print">
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width:1024px)">
+	<style type="text/css">
+		.b{
+			border-color: purple;
+		}
+	</style>
+	<script  src="js1.js" >
+		
+
+	</script>
+</head>
+<body >
+<h1 id="zoom" style="position: fixed;width: 100%;text-align: center;height: 50px;top:0;"></h1>
+<div id="container" class="b centrer-zone">
+<div class="ligne minh b">
+<div class="titre b">
+	<h2  style="background: #CCC;margin-top: 100px;" id="exp"  onmouseover="afficher()" onmouseout="effacer()">experiences profesionnelles</h2>
+
+</div>
+	<div class="g b minh">
+<p class="annee" onclick="saluer()">
+			2000-2005
+		</p>
+	</div>
+	<div class="d b minh">
+		<p class="experience">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam error at reiciendis quisquam excepturi hic non doloremque, facilis modi officiis itaque accusamus cum. Doloremque minima modi aut, debitis, minus cumque?
+		</p>
+
+	</div>
+	<div class="n"></div>
+</div><div class="ligne minh b">
+<div class="titre b">
+	<h2>experiences profesionnelles</h2>
+
+</div>
+	<div class="g b minh">
+<p class="annee" onclick="saluer(this.innerHTML)">
+			2005-2010
+		</p>
+	</div>
+	<div class="d b minh">
+		<p class="experience" onclick="saluer(this.innerHTML)">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam error at reiciendis quisquam excepturi hic non doloremque, facilis modi officiis itaque accusamus cum. Doloremque minima modi aut, debitis, minus cumque?
+		</p>
+
+	</div>
+	<div class="n"></div>
+</div><div class="ligne minh b">
+<div class="titre b">
+	<h2>experiences profesionnelles</h2>
+
+</div>
+	<div class="g b minh">
+		<p class="annee" onclick="saluer(this.innerHTML)">
+			<span>2000-2006</span>
+		</p>
+	</div>
+	<div class="d b minh" style="color: red;">
+		<p class="experience">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam error at reiciendis quisquam excepturi hic non doloremque, facilis modi officiis itaque accusamus cum. Doloremque minima modi aut, debitis, minus cumque?
+		</p>
+
+	</div>
+	<div class="n"></div>
+</div>
+<div class="ligne minh b">
+<div class="titre b">
+	<h2>experiences profesionnelles</h2>
+
+</div>
+	<div class="g b minh">
+		<p class="annee">
+			2000-2005
+		</p>
+	</div>
+	<div class="d b minh">
+		<p class="experience">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam error at reiciendis quisquam excepturi hic non doloremque, facilis modi officiis itaque accusamus cum. Doloremque minima modi aut, debitis, minus cumque?
+		</p>
+
+	</div>
+	<div class="n"></div>
+</div>	
+</div>
+	
+
+</body>
+</html>

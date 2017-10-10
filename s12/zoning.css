@@ -1,0 +1,39 @@
+*{	margin: 0;padding: 0;}
+#container{
+	width: 800px;
+	
+}
+.minh{
+	
+}
+.centrer-zone{
+	margin: auto;
+}
+.b{
+	border:0px solid black;
+	box-sizing: border-box;
+
+}
+.ligne{
+	
+}
+.g{
+	float: left;
+	width: 33.3333%;
+	background: black;
+	color: white;
+}
+.d{
+	float: right;
+	width: 66.6666%;
+	padding: 5px;
+}
+.titre{
+	width: 100%;
+	height: 30px;
+	
+}
+
+.n{
+	clear: both;
+}

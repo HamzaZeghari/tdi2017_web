@@ -1,0 +1,89 @@
+*{	margin: 0;padding: 0;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#container{
+	width: 800px;
+	min-height: 600px;
+	margin: 0 auto;
+}
+.b{
+border:0px solid black;
+box-sizing: border-box;
+}
+.centrer-zone{
+	margin: auto;
+}
+.row{
+	clear: both;
+}
+.g{
+float: left;
+width: 33.33%;
+min-height: 300px;
+background: #EEEEEE;
+}
+
+.d{
+float: right;
+width: 66.66%;
+min-height: 300px;
+}
+#photo{
+width: 200px;
+height: 200px;
+border-radius: 100px;
+overflow: hidden;
+background: #EEE;
+padding-top:12px; 
+}
+#infoperso{
+min-height: 100px;
+}
+.img-responsive{
+	max-width: 100%;
+	max-height: 100%;
+}
+#infoperso h2{
+text-align: center;
+font-size :0.9em;
+font-weight: 400;/* gras */
+font-variant: small-caps;/*en petit majiscule*/
+letter-spacing: 1px;/**/
+text-indent: 3px;/* alignea */
+}
+#specialite{
+	min-height: 200px;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 100px;
+	
+}
+#specialite h2{
+	background: #EEE;
+}
+@media screen and (max-width: 600px){
+
+.g, .d,#container{
+	float: none;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+}
+@media print {
+
+.b{
+	border:1px solid grey;
+}
+}
+
+
+.titre{
+	text-align: center;
+	background: black;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+
+}

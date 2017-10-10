@@ -1,0 +1,7 @@
+.g, .d{
+	float:none;
+	width: 100%;
+}
+.b{
+	border:1px solid grey;
+}
