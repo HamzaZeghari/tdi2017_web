@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Qcm</title>
+	<meta charset="utf-8">
+	<script  src="t.js"></script>
+</head>
+<body>
+
+<div id="qs">
+<div class="question">
+	Capital Maroc
+	<div >
+	Rabat<input type="radio" name="q1"  id="r1" value="1">
+	</div>
+	<div>
+	Casa <input type="radio" name="q1" id="r2" value="2"><br>
+	</div>
+	<div>
+	Fès <input type="radio" name="q1" id="r3" value="3">
+	</div>
+</div>
+
+<div class="question">
+	Devise Maroc
+	<div >
+	$<input type="radio" name="q2"  id="r4" value="4">
+	</div>
+	<div>
+	€ <input type="radio" name="q2" id="r5" value="5"><br>
+	</div>
+	<div>
+	DH <input type="radio" name="q2" id="r6" value="6">
+	</div>
+</div>
+<div class="question">
+	 L3asri Issam est :
+	<div >
+	Homme :<input type="radio" name="q3"  id="r7" value="7">
+	</div>
+	<div>
+	Femme <input type="radio" name="q3" id="r8" value="8"><br>
+	</div>
+	
+</div>
+
+<input type="button" value="Correction" onclick="qcm2()">
+<input type="button" value="Actualiser" onclick="window.location='t.html'">
+mot de passe : <input type="password" id="passe"  onkeydown ="shows()" >
+<input type="text" id="responses" value="1,6,7"  style="display: none">
+</div>
+<div id="resultat" align="center"></div>
+</body>
+</html>

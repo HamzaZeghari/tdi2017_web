@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formulaire partie -1</title>
+	<script type="text/javascript" src="validation.js">
+		
+
+	</script>
+</head>
+<body>
+<marquee style="padding: 10px;background: pink;color: #C00"  onmouseover="stop()" onmouseout="start()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laborum quo iste, facilis odit voluptatum corrupti consectetur ex doloribus voluptas assumenda veniam pariatur totam, illo cumque beatae harum esse hic.
+
+
+ </marquee>
+<form  >
+	<table align="center">
+		<tr>
+			<td>Nombre 1 :</td>
+			<td><input type="text" id="nombre1"></td>
+		</tr>
+		<tr>
+			<td>Nombre 2 :</td>
+			<td><input type="text" id="nombre2"></td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" id="of" value="on" onclick="tog()">
+	</td>
+			<td>+<input type="radio" name="o" value="+" id="o+">
+			-<input type="radio" name="o" value="-" id="o-">
+			/<input type="radio" name="o" value="/" id="o/">
+			*<input type="radio" name="o" value="*" id="o*"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" 
+			 value="+" onclick="ajouter()">
+			 <input type="button" 
+			 value="RAZ"  onclick="raz()"></td>
+		</tr>
+	</table>
+	<div id="resultat" align="center"></div>
+</form>
+	
+
+</body>
+</html>
