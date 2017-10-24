@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>js pay</title>
+	<script type="text/javascript" src="f.js"></script>
+	<link rel="stylesheet" type="text/css" href="s.css">
+</head>
+<body>
+<form action="">
+	<div class="e">
+	<input type="text" id="email" placeholder="email" onblur="show_valider()"></div>
+	<div class="e">
+	<input type="text" id="np" placeholder="nom & prénom" onblur="show_valider()"></div>
+	<div class="e">
+	<label for="cash">cash</label><input type="radio" id="cash" value="cash" name="a" onclick="modepayement()" onblur="show_valider()">
+
+	</div>
+		<div class="e">
+	<label for="pay">Paypal</label><input type="radio" id="pay" value="pay"   name="a" onclick="modepayement()">
+
+	</div>
+	<div class="e" id="dcash">
+	Montant : <input type="text" onblur="show_valider()" value="montant" value=" "></div>
+	<div class="e"  id="dpay">
+	ID paypal :<input type="text" onblur="show_valider()" id="idpaypal" value=" "></div>
+	<div class="e">
+		<input type="button" 
+		id="ok" value="valider" >
+	</div>
+</form>
+
+</body>
+</html>

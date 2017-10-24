@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>validation et controle de saisie</title>
+	<script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+
+<!-- form>fieldset>table>tr*3>td*2 -->	
+<form action="">
+	<fieldset>
+	<legend align="center">Connexion</legend>
+		<table align="center" >
+	<!-- 	<caption>titre</caption> -->
+			<tr>
+<td><label for="email">Email  :</label></td>
+<td> <input type="text" id="email" placeholder="Entrer un email" ></td>
+			</tr>
+			<tr>
+<td><label for="pwd">Mot de passe :</label></td>
+<td><input type="password" id="pwd" placeholder="votre mot de passe"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" id="ok" value="Connexion" onclick="valider_email()"></td>
+
+			</tr>
+		</table>
+	</fieldset>
+</form>
+</body>
+</html>
