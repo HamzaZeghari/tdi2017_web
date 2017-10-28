@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>
+		javscript & dom
+	</title>
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body onload="date_face()">
+<h1>menu de routage </h1>
+<form action="">
+	<table align="center">
+		<tr>
+		<td>effectuer un choix</td>
+			<td><select onchange="routage()" name="liens" id="liens">
+
+			<option selected=""></option>
+					<option value="http://facebook.com">facebook</option>
+					<option value="http://google.fr">Google</option>
+	<option value="http://ofppt.ma">Ofppt</option>
+				</select></td>
+		</tr>
+	</table>
+
+</form>
+<h2 align="center">les formulaires </h2>
+
+<form action="">
+	<table align="center">
+		<tr>
+			<th><label for="" id="llangue">Langue</label></th>
+			<td>
+				<select name="" id="langue" selected="" onchange="changer_langue()">
+				<option value=""></option>
+				<option value="en">English</option>
+					<option value="fr">Francais</option>
+
+				</select>
+
+			</td>
+		</tr>
+		<tr>
+			<th><label for="" id="date">Date </label></th>
+			<td><select id="annees"></select></td>
+		</tr>
+		<tr>
+			<th><label for="" id="lsalaire">Salaire</label></th>
+			<td><input type="text" id="salaire"> <select name="devise" id="devise">
+				<option value="dhs" 
+				selected="selcted">dhs</option>
+				<option value="$">$</option>
+			</select></td>
+		</tr>
+		<tr><td><label for="l" id="lnom">Nom </label></td><td ><input type="text" id="nom" onblur="valider_nom()"></td></tr>
+		<tr>
+			<th><label for="" id="l5"></label></th>
+			<td><input type="submit"  value="valider"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
