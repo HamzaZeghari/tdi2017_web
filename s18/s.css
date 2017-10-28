@@ -1,0 +1,10 @@
+label{
+	text-transform: capitalize;
+cursor: pointer;
+}
+.erreur{
+border: 1px solid red;
+}
+.succes{
+border: 1px solid green;
+}

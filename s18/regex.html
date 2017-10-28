@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>les regex</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" href="s.css">
+<script type="text/javascript" src="regex.js"></script>
+</head>
+<body>
+<form action="" onsubmit="return valider_tout()">
+	<table align="center">
+		<tr>
+			<th><label for="email"></label>Email</th>
+			<td><input type="text" id="email" onblur="valider_email()"></td>
+		</tr>
+		<tr>
+			<th><label for="cin">Cin </label></th>
+			<td><input type="text" id="cin" onblur="valider_cin()"></td>
+		</tr>
+		<tr>
+			<th><label for="date">date de naissance</label></th>
+			<td><input type="text" id="date" onblur="valider_date()"></td>
+		</tr>
+		<tr>
+			<th><label for="tel">Tél</label></th>
+			<td><input type="text" id="tel"></td>
+		</tr>
+		<tr>
+			<th></th>
+			<td><input type="submit" value="valider"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
