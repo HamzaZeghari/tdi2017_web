@@ -1,0 +1,67 @@
+*{
+	margin: 0;padding: 0;
+}
+#contenu{
+	width:2400px;
+	height: 300px;
+	background: #CCC;
+	position: absolute;
+	animation: ofppt 16s infinite ease;
+	animation-delay: 2s;
+}
+#contenu li img{
+	width: 800px;
+	height: 300px;
+
+}
+li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+}
+#slider{
+	width: 800px;
+	height: 300px;
+	border: 1px solid black; 
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+@keyframes ofppt {
+	0%,20%,100%{
+		left: 0;
+	}
+	25%,45%,55%{
+		left: -800px;
+	}
+	60%,70%,95%{
+		left: -1600px;
+	}
+
+}
+.titre{
+	position: absolute;
+	z-index: 4;
+	bottom:0;
+	left: 0;
+	opacity: .8;
+	background: black;
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	height: 100px;
+	
+	line-height: 100px;
+	text-align: center;
+animation: rot 4s infinite ease-in-out;
+
+}
+@keyframes rot {
+	from {
+		transform: rotate(0)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
