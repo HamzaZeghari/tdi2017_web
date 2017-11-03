@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html & jquery</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<h1>test jquery</h1>
+<form action="" name="for1">
+	<table align="center">
+		<tr>
+			<td><label for="">élément 1</label></td>
+			<td><input type="text" id="i1" class="test"></td>
+		</tr>
+		<tr>
+			<td><label for="">élément 2</label></td>
+			<td><input type="text" id="i2" class="test" name="i2"></td>
+		</tr>
+		<tr>
+			<td><label for="">élément 3</label></td>
+			<td><input type="text" id="i3" class="test"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="valider" id="ok"></td>
+		</tr>
+	</table>
+</form>
+
+<p>
+ consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div id="c" style="background: grey;"></div>
+<script type="text/javascript">
+
+$(function(){
+	$('#ok').click(function(event){
+		alert( $('#i1').val() );
+$('#i1').val('salut');
+	});
+
+
+	$('form+ p').hover(function() {
+		$('#c').html($(this).html());
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		$('#c').html("");
+	});
+});
+
+
+</script>
+
+</body>
+</html>

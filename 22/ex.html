@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercice d'application en jquery </title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<style>
+		.erreur{
+			border: 1px solid red;
+		}
+		.succes{
+			border: 1px solid green; 
+		}
+		#erreur{
+			color: red;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+<div id="erreur"></div>
+<form action="x.html" id="monform">
+	<table align="center">
+		<tr>
+			<td><label for="email">Email :</label></td>
+			<td><input type="text" id="email" name="email"></td>
+		</tr>
+		<tr>
+			<td><label for="pwd">Mot de passe :</label></td>
+			<td><input type="text" id="pwd" name="pwd"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Connexion" id="ok"></td>
+		</tr>
+	</table>
+</form>
+<div id="contenu"></div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#ok').click(function(event){
+			var message=""
+	if ($('#email').val()=="") {
+		
+		/*$('#erreur').html('<p>email obligatoire<p>');*/
+		message +="Email obligatoire";
+		$('#email').addClass('erreur');
+				$('#email').removeClass('succes');
+	} else {
+		$('#email').addClass('succes');
+			$('#email').removeClass('erreur');
+			$('#erreur').html('');
+
+	}
+
+	if ($('#pwd').val()=="") {
+		
+		/*$('#erreur').append('<p>mot de passe obligatoire<p>');*/
+		message+="<br>Mot de passe obligatoire";
+		$('#pwd').addClass('erreur');
+				$('#pwd').removeClass('succes');
+	} else {
+		$('#pwd').addClass('succes');
+			$('#pwd').removeClass('erreur');
+			$('#erreur').html('');
+
+	}
+
+	if (message=="") {
+		$('#contenu').html($('#email').val()+" <br>"+$('#pwd').val());
+		//$('#monform').submit();
+	} else {
+event.preventDefault();
+			$('#erreur').html(message);
+
+		//	$('#monform').reset();
+	}
+		});
+	});
+	/*
+ou 
+	$(function(){
+
+	});
+	jQuery(document).ready(function($) {
+		
+	});*/
+</script>
+</body>
+</html>
