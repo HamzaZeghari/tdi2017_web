@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+	<style type="text/css">
+	*{
+		margin: 0;padding: 0;
+	}
+		#menu {
+			width:100%;
+			
+			background: red;
+			position: relative;
+			margin: auto;
+			
+		}
+		nav{
+			width: 100%;
+		}
+		#menu a {
+			border: 1px solid black;
+			display: inline-block;
+			width: 100px;
+			text-align: center
+		}
+		
+		#menu a:first-child{
+background: green;
+		}
+		@media screen and (max-width: 500px) {
+			#menu {
+				background: green;
+			}
+			#menu a:first-child{
+				display: block;
+				 position: absolute;
+				top: 0;
+				right: 0;
+				color: white;
+			}
+			#menu nav a:not(:first-child){
+				display: none ;
+
+			}
+			.show{
+			background: grey;
+			width: 100%;
+		}
+		.show a{
+			display: block !important;
+			height: 50px;
+			width: 100% !important;
+			background: yellow;
+
+		}
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<nav><a href="#6" id="first">&#9776;</a>
+		<a href="#1">lien 1</a>
+		<a href="#2">lien 2</a>
+		<a href="#3">lien 3</a>
+		<a href="#4">lien 4</a>
+		<a href="#5">lien 5</a>
+		
+
+	</nav>
+	</div>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('#first').click(function(event) {
+				$('nav').toggleClass('show');
+				//alert('bien')
+			});
+			
+		});
+	</script>
+</body>
+</html>

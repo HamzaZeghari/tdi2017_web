@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+	<style type="text/css">
+	*{
+		margin: 0;padding: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	#contenu{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+		#slider{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+		
+			margin: auto;
+
+		}
+		.s{
+			border: 2px solid red;
+			position: absolute;
+			
+			
+			width: 100%;
+			height:100%;
+		}
+		.s img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="contenu">
+		<section id="slider">
+		<figure id="1" class="s">
+			<img src="../21/images/a1.png">
+
+		</figure><figure id="2" class="s">
+			<img src="../21/images/a2.png"></figure>
+		<figure id="3" class="s"><img src="../21/images/a3.png"></figure>
+			
+
+	</section>
+	</div>
+	<div id="nav" align="center">
+	<a href="#" id="prev" class="text"> << </a>
+	<span></span><a href="#" class="text" id="next"> >> </a></div>
+
+<script type="text/javascript">
+var encours=0;
+	$(document).ready(function() {
+		var x=""
+		
+		$('figure').each(function(index, el) {
+			console.log('index',index)
+		 	x=$('<a></a>');
+			x.attr({
+				href: '#',
+				class: 'n'
+			});
+			x.html(" "+(index+1)+" ");
+			x.click(function(event) {
+				m(index);
+				
+			});
+		$('#nav span').append(x)	
+
+		});
+		var j=0;
+setInterval(function () {
+	
+	m(j++%$('figure').length)
+},5000);
+$('#next').click(function(event) {
+	m(encours+1);
+});
+$('#prev').click(function(event) {
+	m(encours-1);
+});
+	});
+
+function m (i) {
+	$('figure').each(function(index, el) {
+		var n =$('figure').length;
+		console.log('iii',i)
+		if(i<0) i=n-1;
+			if(i==n) i=0;
+		if(index!=i){
+			//$(this).hide('slide', {direction:"left"},2100);
+$(this).fadeOut('2000', function() {
+	
+});
+		}else {
+				//$(this).show('slide', {direction:"right"},2000);
+				$(this).fadeIn(3000, function() {
+					
+				});
+		}
+		encours=i;
+		console.log('encours',encours)
+	});
+
+}
+</script>
+</body>
+</html>
